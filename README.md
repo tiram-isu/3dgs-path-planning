@@ -83,39 +83,6 @@ docker run -it --rm --gpus all -v "$(pwd):/app" -e DISPLAY=$DISPLAY -p 5005:5005
 Results are stored in the output/output_name folder, with subdirectories created for each generated path set. This includes:\
 - Logs for each planner
 - Screenshots of the generated paths
-- A summary log with key statistics from all planners (computation time, path lengths, curvatures)
+- A summary log and plots with key statistics from all planners (computation time, path lengths, curvatures)
+- [Optional] Video of the path rendered using nerfstudio as an `.mp4` file
 
-Additionally, plots analyzing path properties (computation times, lengths, curvatures) are saved in the plots folder.
-
-# File structure
-```bash
-\\wsl.localhost\Ubuntu.
-├───models
-├───voxel_models
-│   ├───<output_name>
-│   │   └───res_factor<voxel_resolution>
-│   │       └───voxels_<opacity_threshold>_<size_threshold>
-├───output
-│   ├───<output_name>
-│   │   └───<num_paths>
-│   │       ├───summary_log.json
-│   │       ├───plots
-│   │       └───RRT
-│   │          ├───visualization.png
-│   │          └───log.txt
-│   │          ...
-├───paths
-│   ├───<output_name>
-│   │   ├───RRT.json
-│   │   ...
-│   main.py
-│   importer.py
-│   gaussians_to_voxels.py
-│   voxel_grid.py
-│   collision_detection.py
-│   planner_manager.py
-│   planner.py
-│   visualization.py
-│   path_utils.py
-│   log_utils.py
-```
