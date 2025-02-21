@@ -1,0 +1,3 @@
+[submodule "nerfstudio_flask"]
+	path = nerfstudio_flask
+	url = https://github.com/tiram-isu/nerfstudio_flask.git
