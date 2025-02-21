@@ -1,3 +1,6 @@
 [submodule "nerfstudio_flask"]
 	path = nerfstudio_flask
 	url = https://github.com/tiram-isu/nerfstudio_flask.git
+[submodule "ompl_path_planning"]
+	path = ompl_path_planning
+	url = https://github.com/tiram-isu/ompl_path_planning.git
