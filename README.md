@@ -18,6 +18,7 @@ Optionally, this can then be sent to be rendered by Nerfstudio via a Flask serve
 This repository integrates two submodules for path planning and rendering:
 1. `ompl_path_planning`: Uses [OMPL](https://ompl.kavrakilab.org/index.html) for motion planning, running within [WSL 2](https://learn.microsoft.com/de-de/windows/wsl/install) and [Docker](https://www.docker.com/).
 2. `nerfstudio_flask`: Hosts a [Flask](https://flask.palletsprojects.com/en/stable/) server to receive generated paths from `ompl_path_planning` and render them using [nerfstudio](https://docs.nerf.studio/).
+See the respective README files of these submodules for more details.
 
 # Prerequisites
 
